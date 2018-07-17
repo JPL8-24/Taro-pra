@@ -1,0 +1,43 @@
+.home-container{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  background: #f0f0f0;
+  .pink{
+    background: #ffd5d8;
+    height: 100px;
+  }
+  .icon-List{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 25%;
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
+    .icon-item{
+      width: 23%;
+      height: 0;
+      overflow: hidden;
+      padding-bottom:25%;
+      border-radius: 50%;
+      margin-left: 13px;
+      position: relative;
+      background: white;
+      .icon-img{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom:0;
+        .ima-content{
+          height: 100%;
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+
+}

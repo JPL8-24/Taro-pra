@@ -1,0 +1,24 @@
+.todoList{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  background: white;
+  .TodoItem{
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px auto;
+    text-align: center;
+  }
+  .A{
+    background: #ff7181;
+  }
+  .B{
+    background: #faff92;
+  }
+  .C{
+    background: #5eebf0;
+  }
+  .D{
+    background: #9effa7;
+  }
+}

@@ -1,0 +1,181 @@
+.MusicContainer{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  .Music-tapBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: white;
+    border-bottom: 1px solid gainsboro;
+    .tabtitle{
+      flex: 1;
+      width: 33.3%;
+      height: 100%;
+      text-align: center;
+      cursor: pointer;
+      transition: all 1s;
+      .taptxt{
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        color: #333;
+        font-size: 30px;
+        line-height: 80px
+      }
+    .selected{
+        border-bottom:2px solid #779fff;
+        color: #779fff;
+    }
+    }
+  }
+  .recommand-container{
+    position: relative;
+    top:110px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .songsList-header{
+      font-size: 35px;
+      color:#333;
+      border-left: 4px solid #779fff;
+      margin-bottom: 10px;
+      span{
+        padding-left: 20px;
+      }
+    }
+    .songsList{
+      position: relative;
+      padding-bottom: 48px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .songsList-item{
+        padding-right: 4px;
+        display: block;
+        width: 33.3%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        overflow: hidden;
+        &:after{
+          clear: both;
+          content:'';
+          height: 0;
+          display: block;
+        }
+        .songsList-img{
+          position:relative;
+          height: 244px;
+          Image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index:1;
+          }
+          span{
+            position: absolute;
+            right: 10px;
+            top:4px;
+            z-index:3;
+            padding-left: 50px;
+            color: white;
+            font-size: 24px;
+            text-shadow: 2px 0 0 rgba(0,0,0,.30);
+            Image{
+              width: 22px;
+              height: 20px;
+              position: relative;
+            }
+          }
+        }
+        .songsList-text{
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          padding: 6px 2px 0 6px;
+          line-height: 1.2;
+          font-size: 26px;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  .NewsSong-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    .newsong-header{
+      font-size: 35px;
+      color:#333;
+      border-left: 4px solid #779fff;
+      span{
+        padding-left: 20px;
+      }
+    }
+    .newsong-list{
+      margin: 20px 10px 20px 10px;
+      display: flex;
+      flex-direction:column ;
+      .newsong-item{
+        display: flex;
+        flex-direction: row;
+        padding:12px 0;
+        border-bottom: 1px solid #d5d5d5;
+        .item-text{
+          display: flex;
+          flex-direction: column;
+          width:660px;
+          .item-text-top{
+            font-size:30px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-break: normal;
+          }
+          .item-text-bottom{
+            font-size:24px;
+            color: #888;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-break: normal;
+            display: flex;
+            flex-direction: row;
+            .icon{
+              width: 30px;
+              height: 25px;
+              position:relative;
+              top:8px;
+              margin-right: 4px;
+              Image{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+        .item-icon{
+          width:60px;
+          height: 60px;
+          Image{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -14,11 +14,11 @@ const store = configStore()
 class App extends Component {
   config = {
     pages: [
-      'pages/index/index','pages/Home/index','pages/map/map'
+      'pages/index/index','pages/Home/index','pages/movie/movie','pages/MovieDetail/MovieDetail','pages/Music/Music'
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
+      navigationBarBackgroundColor: '#779fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
     },
@@ -31,11 +31,7 @@ class App extends Component {
       },{
         pagePath:"pages/index/index",
         text:"地图"
-      },
-        {
-          pagePath:"pages/map/map",
-          text:"地图"
-        }]
+      }]
     }
   }
 
@@ -44,8 +40,6 @@ class App extends Component {
   componentDidShow () {}
 
   componentDidHide () {}
-
-  componentCatchError () {}
 
   render () {
     return (

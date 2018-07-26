@@ -1,0 +1,232 @@
+.mdetail-container{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  .mdetail-header{
+    width: 100%;
+    height: 360px;
+    display: flex;
+    position: relative;
+    .mheader-backgroud{
+      position:absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      overflow: hidden;
+      height: 100%;
+      Image{
+        height: 1054px;
+        width: 100%;
+        filter:brightness(30%);
+      }
+    }
+    .mheader-img{
+      z-index: 50;
+      height:330px;
+      width: 240px;
+      position: relative;
+      top:60px;
+      left: 40px;
+      margin-right: 70px;
+      Image{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .mheader-text{
+      z-index:50;
+      position:relative;
+      top:105px;
+      .mheader-title{
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .mheader-grade{
+        color: white;
+        height: 100px;
+        display: flex;
+        .mgrade-grade{
+          font-weight: bold;
+          height: 100%;
+          font-size: 70px;
+        }
+        .mgrade-star{
+          display: flex;
+          flex-direction: column;
+          margin: 5px 0 0 12px;
+          height: 100%;
+          .mgrade-stars{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 40px;
+            justify-content: center;
+            margin: 6px 0 6px 0;
+            .star{
+              position: relative;
+              top:-6px;
+              height: 30px;
+              width: 30px;
+              float: left;
+              Image{
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .unstar{
+              height: 30px;
+              width: 30px;
+              float: left;
+              position: relative;
+              top:-6px;
+              Image{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+          .mgrade-count{
+            font-size: 20px;
+            color: #d0d0d0;
+          }
+        }
+      }
+    }
+
+  }
+  .mdetail-info{
+    margin:50px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom:1px solid #c8c8c8;
+    .minfo{
+      color: #575757;
+      font-size: 30px;
+      &:last-child{
+        margin-bottom: 13px;
+      }
+    }
+  }
+  .mdetail-summary{
+    margin: 30px 20px 10px 20px;
+    border-bottom:1px solid #c8c8c8;
+    .msummary-header{
+      color: #c2c2c2;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+    .msummary-content{
+      font-size: 30px;
+      color: #5a5a5a;
+      margin-bottom: 15px;
+    }
+  }
+  .mdetail-casts{
+    display: flex;
+    margin: 10px 20px 0 20px;
+    flex-direction: column;
+    .mcasts-header {
+      font-weight: bold;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .mcasts-content{
+      display: flex;
+      flex-direction:row ;
+      width: 100%;
+      height: 280px;
+      .mcontent-item{
+        width: 170px;
+        height: 100%;
+        margin-right: 15px;
+        Image{
+          width: 100%;
+          height: 250px;
+        }
+        Text{
+          color: #6b6b6b;
+          font-size: 30px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .mdetail-comments{
+    display: flex;
+    margin: 80px 20px 10px 20px;
+    flex-direction: column;
+    .mcomments-header{
+      color: #c2c2c2;
+      font-size: 30px;
+      margin-top: 50px;
+      margin-bottom:20px;
+    }
+    .mcomments-items{
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #dcdcdc;
+      margin-top: 30px;
+      .mcomments-img{
+        width: 100px;
+        height: 100px;
+        Image{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      .mcoments-content{
+        width:600px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        .mcoments-user{
+          display: flex;
+          flex-direction:row;
+          font-size: 30px;
+          .mgrade-stars{
+            display: flex;
+            flex-direction: row;
+            margin-left: 5px;
+            padding-top: 8px;
+            .star{
+              position: relative;
+              top:-6px;
+              height: 30px;
+              width: 30px;
+              float: left;
+              Image{
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .unstar{
+              height: 30px;
+              width: 30px;
+              float: left;
+              position: relative;
+              top:-6px;
+              Image{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+        .mcoments-date{
+          font-size: 22px;
+          color: #c2c2c2;
+        }
+        .mcoments-info{
+          font-size: 30px;
+          color: #5a5a5a;
+        }
+
+      }
+    }
+  }
+}

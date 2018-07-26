@@ -1,0 +1,139 @@
+.movie-container{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  .movie-header{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #c2c2c2;
+    .m-header-area{
+      color: #999999;
+      font-size:25px;
+      padding:10px 13px 10px 13px;
+      width:48%;
+    }
+    .m-header-select{
+      color: #999999;
+      font-size:25px;
+      display: flex;
+      padding:10px 0;
+      .onshow{
+        margin-right:20px ;
+        border-bottom: 10px solid pink;
+        color:pink;
+      }
+      .willshow{
+        margin-left: 10px;
+      }
+    }
+  }
+  .movie-swiper{
+    margin: 0 auto;
+    height: 450px;
+    .swiper-item{
+      width: 100%;
+    }
+  }
+  .movie-list{
+    display: flex;
+    flex-direction: column;
+    .movie-item{
+      margin: 40px 30px 10px 30px ;
+      display: flex;
+      flex-direction:column ;
+      border-bottom: 1px solid #d9d2df;
+      .movie-content{
+        display: flex;
+        flex-direction: row;
+        .movie-img{
+          height: 200px;
+          width: 150px;
+          >Image{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .movie-info{
+          display: flex;
+          flex-direction: column;
+          margin-left:18px;
+          width: 60%;
+          .movie-title{
+            font-size: 40px;
+            color:black;
+          }
+          .movie-people{
+            font-size: 30px;
+            color: #999999;
+            margin: 3px 0 3px 0;
+          }
+          .grade{
+            color: #ff7181;
+            font-weight: bold;
+          }
+        }
+        .movie-detail-button{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin:0;
+          padding:0;
+          .detail-button{
+            border:1px solid hotpink;
+            font-size:20px;
+            font-weight: bold;
+            color:white;
+            background:hotpink ;
+
+          }
+        }
+      }
+      .movie-sepra{
+        height: 1px;
+        margin: 30px 90px 5px 90px;
+        border-bottom: 1px solid #e8e8e8;
+      }
+      .movie-start{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        margin: 6px 0 6px 0;
+        .star{
+          position: relative;
+          top:-6px;
+          height: 30px;
+          width: 30px;
+          float: left;
+          Image{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .unstar{
+          height: 30px;
+          width: 30px;
+          float: left;
+          position: relative;
+          top:-6px;
+          Image{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .star-text{
+          font-size: 30px;
+          color: #999999;
+          margin-right: 6px;
+          position: relative;
+          top:0px;
+        }
+        .star-score{
+          color: hotpink;
+        }
+      }
+    }
+  }
+}

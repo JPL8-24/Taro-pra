@@ -1,0 +1,71 @@
+.musicplay-container{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  position: relative;
+  .musicplay-background{
+    position:absolute;
+    width: 100vh;
+    height: 100vh;
+    filter: brightness(15%);
+    Image{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .musicplay-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    top:200px;
+    z-index: 22;
+    .musicimg{
+      margin:10px auto;
+      width: 450px;
+      height: 450px;
+      Image{
+        height: 100%;
+        width: 100%;
+        border-radius:50%;
+      }
+    }
+    .music-play{
+      position: absolute;
+      left: 50%;
+      top: 200px;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+      z-index: 999;
+      Image{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .play{
+      animation: play 10s linear infinite;
+    }
+    .musicinfo{
+      margin: 30px 40px;
+      text-align: center;
+      line-height: 30px;
+      .musicename{
+        font-size: 36px;
+        color: white;
+      }
+      .musicart{
+        font-size: 32px;
+        color:hsla(0,0%,100%,.6) ;
+      }
+    }
+  }
+  @keyframes play {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+}

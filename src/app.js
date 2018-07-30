@@ -14,7 +14,7 @@ const store = configStore()
 class App extends Component {
   config = {
     pages: [
-      'pages/index/index','pages/Home/index','pages/movie/movie','pages/MovieDetail/MovieDetail','pages/Music/Music'
+      'pages/index/index','pages/Home/index','pages/movie/movie','pages/MovieDetail/MovieDetail','pages/Music/Music','pages/MusicPlay/MusicPlay'
     ],
     window: {
       backgroundTextStyle: 'light',

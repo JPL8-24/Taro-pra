@@ -57,5 +57,38 @@ export default {
         idx:'1'
       }
     })
+  },
+  getMusic:(id)=>{
+    return Taro.request({
+      method:'GET',
+      url:'http://localhost:3000/music/url',
+      data:{
+        id:id
+      }
+    })
+  },
+  getAlbumDetail:(id)=>{
+    return Taro.request({
+      url:'http://localhost:3000/album',
+      data:{
+        id:id
+      }
+    })
+  },
+  getLyric:(id)=>{
+    return Taro.request({
+      url:'http://localhost:3000/lyric',
+      data:{
+        id:id
+      }
+    })
+  },
+  getSongList:(id)=>{
+    return Taro.request({
+      url:'http://localhost:3000/playlist/detail',
+      data:{
+        id
+      }
+    })
   }
 }

@@ -25,7 +25,6 @@ const mapDispatchToProps=(dispatch)=>{
 @connect(mapStateToProps,mapDispatchToProps)
 export default class Recommand extends Component {
   componentWillMount(){
-    console.log(this.props)
     if(this.props.music.recommandList.length===0){
       Taro.showLoading({
         title:'正在加载',
@@ -46,6 +45,11 @@ export default class Recommand extends Component {
     })
 
   }
+  goPlay(id,url){
+    Taro.navigateTo({
+      url:`/pages/MusicPlay/MusicPlay?id=${id}&albumid=${url}`
+    })
+  }
   render() {
     return (
       <View className='recommand-container'>
@@ -54,7 +58,7 @@ export default class Recommand extends Component {
           <View className='songsList'>
             {
               this.props.music.recommandList.map((item)=>{
-               return <View className='songsList-item' key={item.id}>
+               return <View className='songsList-item' key={item.id} >
                   <View className='songsList-img'>
                     <Image src={item.picUrl}/>
                     <span><Image src={erji}/>{item.playCount}</span>
@@ -69,8 +73,8 @@ export default class Recommand extends Component {
           <View className='newsong-header'><span>最新歌曲</span></View>
           <View className='newsong-list'>
             {
-              this.props.music.NewSongList.map((item)=>{
-                return <View className='newsong-item'>
+              this.props.music.NewSongList.map((item,index)=>{
+                return <View className='newsong-item' onClick={this.goPlay.bind(this,item.id,item.song.album.id)}>
                   <View className='item-text'>
                     <View className='item-text-top'>{item.name}</View>
                     <View className='item-text-bottom'><span className='icon'><Image src={sq}/></span>{item.song.artists[0].name}-{item.song.album.name}</View>

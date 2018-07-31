@@ -1,9 +1,9 @@
-##1.技术栈
+## 1.技术栈
 * react
 * taro.js
 * redux
 
-##2.注意事项（遇到的坑）
+## 2.注意事项（遇到的坑）
 ```javascript
 1.redux的使用
 (1)首先在constants文件夹中定义相关模块的事件名
@@ -37,10 +37,10 @@
 4.若出现莫名其妙的问题，更新taro即可！
 5.taro在列表渲染中无法使用自定义组件，自定义组件无法获取props和无法执行生命周期函数
 ```
-##3.使用
+## 3.使用
 
 本项目电影部分后端使用豆瓣api。音乐部分使用github上面的一个网易云音乐的api，项目地址[https://binaryify.github.io/NeteaseCloudMusicApi/#/](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
 需要将该项目在本地运行才可以使用本项目
 
-##4.运行效果
+## 4.运行效果
 <img src='https://github.com/externalFa/Taro-pra/blob/master/src/static/22.gif' >

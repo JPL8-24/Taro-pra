@@ -50,6 +50,11 @@ export default class Recommand extends Component {
       url:`/pages/MusicPlay/MusicPlay?id=${id}&albumid=${url}`
     })
   }
+  goList(id){
+    Taro.navigateTo({
+      url:`/pages/MusicList/MusicList?id=${id}`
+    })
+  }
   render() {
     return (
       <View className='recommand-container'>
@@ -58,7 +63,7 @@ export default class Recommand extends Component {
           <View className='songsList'>
             {
               this.props.music.recommandList.map((item)=>{
-               return <View className='songsList-item' key={item.id} >
+               return <View className='songsList-item' key={item.id} onClick={this.goList.bind(this,item.id)}>
                   <View className='songsList-img'>
                     <Image src={item.picUrl}/>
                     <span><Image src={erji}/>{item.playCount}</span>

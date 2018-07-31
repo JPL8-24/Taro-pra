@@ -1,4 +1,4 @@
-import {GET_RECOMMANDLIST,GET_NEWSONGS_LIST,GET_HOTMUSIC_LIST,GET_SONG_DETAIL} from "../constants/music"
+import {GET_RECOMMANDLIST,GET_NEWSONGS_LIST,GET_HOTMUSIC_LIST,GET_SONG_DETAIL,GET_SONGS_LIST} from "../constants/music"
 
 export const getRecommandList=(payload)=>{
   return{
@@ -22,6 +22,13 @@ export const getHotList=(payload)=>{
 export const getSongDetail=(payload)=>{
   return{
     type:GET_SONG_DETAIL,
+    payload
+  }
+}
+
+export const getSongsList=(payload)=>{
+  return{
+    type:GET_SONGS_LIST,
     payload
   }
 }

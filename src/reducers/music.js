@@ -1,4 +1,4 @@
-import {GET_RECOMMANDLIST,GET_NEWSONGS_LIST,GET_HOTMUSIC_LIST,GET_SONG_DETAIL} from "../constants/music"
+import {GET_RECOMMANDLIST,GET_NEWSONGS_LIST,GET_HOTMUSIC_LIST,GET_SONG_DETAIL,GET_SONGS_LIST} from "../constants/music"
 const INITIAL_STATE={
   recommandList:[],
   NewSongList:[],
@@ -7,7 +7,8 @@ const INITIAL_STATE={
     url:'',
     picUrl:'',
     lyric:''
-  }
+  },
+  songsList:{}
 }
 
 export default function music(state=INITIAL_STATE,action){
@@ -27,6 +28,10 @@ export default function music(state=INITIAL_STATE,action){
     case GET_SONG_DETAIL:
       return{
         ...state,songDetail:JSON.parse(JSON.stringify(action.payload))
+      }
+    case GET_SONGS_LIST:
+      return{
+        ...state,songsList:JSON.parse(JSON.stringify(action.payload))
       }
     default:
       return state

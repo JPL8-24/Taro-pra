@@ -43,3 +43,4 @@
 需要将该项目在本地运行才可以使用本项目
 
 ##4.运行效果
+<img src='https://github.com/externalFa/Taro-pra/blob/master/src/static/22.gif' >
